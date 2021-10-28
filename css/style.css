@@ -1,0 +1,52 @@
+.conversion {
+    font-family: 'Zen Antique', serif;
+    text-align: center;
+}
+
+.conversion-box {
+    font-family: 'Zen Antique', serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Zen Antique', serif;
+}
+
+p {
+    font-family: 'Zen Antique', serif;
+}
+
+hr {
+    color: white;
+}
+
+.heading {
+    text-align: center;
+}
+
+.encryption {
+    text-align: center;
+    background-color: aqua;
+    padding-bottom: 5px;
+}
+
+.conversion-to-decimal {
+    text-align: center;
+    background-color: aqua;
+    padding-bottom: 5px;
+}
+
+.conversion-to-binary {
+    text-align: center;
+    background-color: aqua;
+    padding-bottom: 5px;
+}
+
+.hash-display {
+    text-align: center;
+}
+
+.input-box-with-button {
+    text-align: center;     
+    display: inline-block;
+}

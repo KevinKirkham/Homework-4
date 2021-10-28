@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Encryption and Conversions</title>
+
+        <!-- Link to style sheet -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Link to FavIcon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+        <!-- Link to style sheet -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script>
+
+        <!-- Link to Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body style=background-color:blue>
+        
+        <div>
+
+            <form action="POST">
+        
+                <!-- Encryption using CryptoJS -->
+                <div class="encryption"> 
+                    <div class="heading">
+                        <div><h2>Encryption Using Crypto JS</h2></div>
+                        <hr>
+                    </div>
+                    <div>
+                        <p>Input a password that you would like to use the next time you create an account with a website
+                             and press the encrypt button to see what that password would hash to using four different hashing algorithms.</p>
+                    </div>
+
+                    <div class="input-box-with-button">
+
+                            <input type="text" id="input-string" placeholder="Password...">
+                            <button type="button" onclick="encrypt()">Encrypt</button>
+                    </div>
+                        
+                    <div>
+                        <div class="hash-display">
+                            <h3 id="aes-encryption"></h3>
+                        </div>
+                        <div class="hash-display">
+                            <h3 id="md5-encryption"></h3>
+                        </div>
+                        <div class="hash-display">
+                            <h3 id="sha1-encryption"></h3>
+                        </div>
+                        <div class="hash-display">
+                            <h3 id="hmac-encryption"></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Binary to Decimal Conversion -->    
+                <div class="conversion-to-decimal">
+                    <div class="heading">
+                        <h2>Binary to Decimal Conversion</h2>
+                        <hr>
+                    </div>
+                    <br>
+                    <div>
+                        <p>Input a valid binary number and press the Convert button to see its decimal equivalent</p>
+                    </div>
+                    <input type="text" id="inputBinary" placeholder="Binary number...">
+                    <button type="button" onclick="toDecimal()">Convert</button>
+                    <div class="conversion"><h4 id="convertDecimal"></h4></div>
+                </div>
+
+                <hr>
+
+                <!-- Decimal to Binary Conversion -->  
+                <div class="conversion-to-binary">
+                    <div class="heading"><h2>Decimal to Binary Conversion</h2></div>
+                    <hr>
+                    <div>
+                        <p>Input a base 10 number and press the Convert button to see its binary equivalent</p>
+                    </div>
+                    <input type="text" id="inputDecimal" placeholder="Decimal number...">
+                    <button type="button" onclick="toBinary()">Convert</button>
+                    <div class="conversion">
+                        <h4 id="convertBinary"></h4>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+        <script src="script/script.js"></script>
+        
+    </body>
+
+</html>
